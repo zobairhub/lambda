@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Yeseva+One&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  
+  --white: #ffffff;
+  --black:#000000;
+  --rgba:rgba(0, 0, 0, 0.5);
+  --box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --btn-bg : #e74545;
+  --main-color: #dab33e;
+
+
+  /* font-family: 'Gentium Book Plus', serif; */
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Yeseva One', cursive; */
+}
+body{
+}
+
+a{
+  text-decoration: none;
+}
+/* header part start */
+header{
+  background: url("../images/herobg.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+}
+.navbar{}
+.navbar-nav{}
+.navbar-nav .nav-item {}
+.navbar-nav .nav-item .nav-link{
+  color: var(--white);
+  font-size: 21px;
+  /*font-weight: bold;*/
+  font-family: 'Gentium Book Plus', serif;
+  text-transform: capitalize;
+}
+.navbar-nav .nav-item .nav-link i{
+  color: var(--main-color);
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--main-color);
+  background-color: var(--rgba);
+}
+/* header part end */
+
+/* hero part start */
+.hero-main-content{}
+.hero-content{}
+.hero-content .hero-heading h1{
+  font-family: 'Yeseva One', cursive;
+  font-weight: ;
+  font-size: 60px;
+  color: white;
+}
+.hero-content p {
+  font-size:18px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+.hero-content .hero-text button{
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 200px;
+}
+.hero-content .hero-devider img{
+  height: 30px;
+}
+.hero-content .hero-text button:nth-child(1){
+  background: var(--rgba);
+  color: var(--white);
+}
+.hero-content .hero-text button:nth-child(2){
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+.hero-content .hero-text button:nth-child(1),.hero-content .hero-text button:nth-child(2){
+	transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+.hero-content .hero-text button:nth-child(1):hover{
+ background: rgba(255, 255, 255, 0.2);
+ color: var(--main-color);
+}
+
+.hero-content .hero-text button:nth-child(2):hover{
+  background: var(--rgba);
+  color: var(--main-color);
+}
+
+/* hero part end */
+
+
+/*dish part start*/
+.dish-part{
+	background: url("../images/menubg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.dish-part .dish-part-main .dish-part-text {}
+.dish-part .dish-part-main .dish-part-text .cock-img:hover{}
+.dish-part .dish-part-main .dish-part-text p{
+	font-size: 16px;
+	color: #4c4c4c;
+	font-family: 'Lato', sans-serif; 
+	
+}
+.dish-part .dish-part-main .dish-part-text h4{
+	font-size: 36px ;
+	font-family: 'Yeseva One', cursive;
+	color: #cc9900;
+}
+
+/*dish part end*/
+
+/*ingridient part start*/
+.ingredients-part{
+	background: url("../images/ingre.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 80px 50px;
+}
+.overlay{
+	background: rgba(0,0,0,0.5);
+	padding: 50px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+.overlay:hover{
+	box-shadow:rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.overlay .ing-img{
+	
+	height: 100px;
+
+}
+
+.overlay h4{
+	font-size: 36px;
+	font-family: 'Yeseva One', cursive;
+}
+.overlay p{
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+/*ingridient part end*/
+
+/*menu part start*/
+.menu-part{
+	background: url("../images/menubg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.menu-main{}
+.menu-header{}
+.menu-header h4{
+	color: #cc9900;
+	font-family: 'Yeseva One', cursive;
+	font-size: 36px;
+}
+.menu-header img{}
+.menu-content-box{}
+.menu-content-box .menu-des-box{}
+.menu-content-box .menu-des-box p{
+	color: #4c4c4c;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+.menu-content{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #cc9900;
+}
+.menu-content .name-box{}
+.menu-content .price-box{}
+.menu-content .name-box h6 ,.menu-content .price-box h6{
+	color: #c89f2d;
+	font-size: 21px;
+	font-family: 'Yeseva One', cursive;
+}
+
+/*review part start*/
+.review-part{
+	background: url("../images/reviewbg.jpg");
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: cover;
+	padding: 80px 50px;
+}
+.review-main-box{
+	background : var(--rgba);
+	padding: 40px;
+	transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+.review-main-box:hover{
+	box-shadow:rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.review-content{}
+.review-content h4{
+	font-size: 36px;
+	font-family: 'Yeseva One', cursive;
+}
+.review-content img{}
+.review-content p{
+	color: #dde0df;
+	font-size: 25px;
+	font-family: 'Gentium Book Plus', serif;
+}
+/*review part end*/
+
+/*reservation part start*/
+.reservation-part{
+	background: url("../images/menubg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 40px 0px;
+}
+.reservation-img{}
+.reservation-img img{
+	width: 100%;
+	height: 555px;
+}
+
+.reservation-form-box{}
+.reservation-header{}
+.reservation-header h4{
+	color: #cc9900;
+	font-size: 36px;
+	font-family: 'Yeseva One', cursive;
+}
+.reservation-header img{}
+.reservation-header p{
+	color: #4c4c4c;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+.reservation-form{}
+.reservation-form form input{
+	font-size: 16px;
+	color: #7c7c7c;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	
+}
+.reservation-form form button:hover{
+	background: var(--rgba);
+	color: var(--main-color);
+}
+.reservation-form form button{
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	background: var(--main-color);
+}
+.reservation-form form button:before{
+	content="";
+	background: var(--rgba);
+	height: 50px;
+	width: 120px;
+}
+.reservation-form form label{
+	font-size : 14px;
+	color: #c9a131;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+/*reservation part end*/
+
+/*footer part start*/
+.footer-part{
+	background-color: #191919;
+}
+.footer-main{}
+.footer-header{}
+.footer-main .footer-header h4{
+	font-size: 21px;
+	font-family: 'Yeseva One', cursive;
+}
+.footer-main .footer-header p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+.footer-main .footer-header img{}
+/*footer part end*/
+
+
+
+
+
+
+
+
+
+
+/*menu part end*/
+
+
+
+
+
+
+
+
+
+
+
+/* responsive area */
+
+@media screen and (max-width: 992px) {
+ 	.navbar-nav .nav-item .nav-link i{
+  	color: var(--white);
+	}
+		.reservation-header p {
+			color: #4c4c4c;
+			font-size: 15px;
+			font-family: 'Lato', sans-serif;
+			margin-bottom: 0.5rem;
+		}
+				.reservation-header img {
+					padding-bottom: 1rem !important;
+					padding-top: 0rem !important;
+				}
+}
+
+@media screen and (max-width: 768px) {
+.footer-main .footer-header h4 {
+  font-size: 17px;
+}
+.footer-main .footer-header img {
+  height: 25px;
+}
+.footer-text p{
+	font-size: 13px;
+
+}
+.reservation-img img {
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (max-width: 576px){
+.review-content h4 {
+  font-size: 30px;
+  font-family: 'Yeseva One', cursive;
+}
+.review-content p {
+  color: #dde0df;
+  font-size: 20px;
+  font-family: 'Gentium Book Plus', serif;
+}
+.footer-main{
+	padding-top: 2rem !important;
+}
+  .hero-content .hero-heading h1{
+	  font-size: 50px;
+	}
+		.reservation-img img {
+  width: 100%;
+  height: 350px;
+}
+	.navbar-brand img{
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 320px){
+.reservation-form form input{
+	font-size: 14px;
+}
+.reservation-header h4{
+	font-size: 32px;
+}
+.menu-header h4{
+	font-size: 30px;
+}
+.dish-part .dish-part-main .dish-part-text h4 {
+  font-size: 32px;
+  font-family: 'Yeseva One', cursive;
+  color: #cc9900;
+}
+.hero-main-content{
+	height: 60vh !important;
+}
+.footer-main{
+	padding-top: 1rem !important;
+}
+	.hero-content .hero-heading h1 {
+  font-size: 30px;
+}
+	.navbar-brand img{
+		height: 70px;
+	}
+	
+	.hero-content .hero-text button:nth-child(2){
+		margin-top: 10px;
+	}
+	.overlay{
+		padding: 5px;
+	}
+	.overlay h4{
+		font-size: 27px;
+		
+	}
+	.overlay p{
+		font-size: 18px;
+		margin-bottom: 0px;
+	}
+	.overlay .ovr-img{
+		height: 20px;
+
+	}
+	.overlay .ing-img {
+		height: 72px;
+	}
+	.ovr-row{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	.rev-cl-8{
+		padding-right:0px !important;
+		padding-left: 0px !important;
+	}
+	.review-main-box {
+		padding: 15px;
+	}
+	.review-content h4 {
+		font-size: 20px;
+	}
+	.review-content img {
+		height: 20px;
+	}
+	.review-content p {
+		font-size: 18px;
+		margin-bottom: 0px;
+	}
+	.fin-ing{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	} 
+		.reservation-img img {
+			width: 100%;
+			height: 400px;
+		}
+	
+	
+	
+	
+	
+	
+	
+}
